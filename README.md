@@ -215,3 +215,8 @@ Other hardware could also do the job:
   the inverter
 * Bluetooth serial bridges (delivered in pairs)
 * STM32 with Ethernet (once Ethernet is routed to the cabinet)
+* A more industrial grade solution (without WiFi) could be realised with
+  something like Phytec phyBOARD-Regor which has C-rail mounting, 24 VDC input
+  and hardware RS232 on board. Unfortunately, no Ethernet is yet routed to the
+  cabinet and the board uses the RS232 as the kernel console. Disabling the
+  kernel console is quite inconvenient for debugging.
