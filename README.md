@@ -197,7 +197,7 @@ arp -a
 `com2tcp` runs from the command shell:
 
 ```
-com2tcp \\.\COM3 ${IP} ${PORT}
+com2tcp.exe --telnet --ignore-dsr --baud 115200 \\.\COM4 ${IP} ${PORT}
 ```
 
 ## Discussion
@@ -206,7 +206,8 @@ The solution is using readily available components and is accessible over the
 company WiFi.
 
 Alternative solutions could have been using the router as an access point with
-the disadvantage that then a connection to the Internet is discontinued.
+the disadvantage that then a connection to the Internet of the laptop is then
+discontinued.
 
 Other hardware could also do the job:
 
